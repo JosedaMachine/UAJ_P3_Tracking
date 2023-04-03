@@ -1,0 +1,3 @@
+[submodule "Assets/GameTracker"]
+	path = Assets/GameTracker
+	url = https://github.com/JosedaMachine/GameTracker
