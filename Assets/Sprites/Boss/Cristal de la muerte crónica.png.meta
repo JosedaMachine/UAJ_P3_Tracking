@@ -45,7 +45,7 @@ TextureImporter:
       213: -1387579111667388445
     second: "Cristal de la muerte cr\xF3nica_13"
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -65,6 +65,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -74,8 +76,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -96,9 +98,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -186,6 +193,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -503,6 +522,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Cristal de la muerte cr\xF3nica_5": -8098428967083601798
+      "Cristal de la muerte cr\xF3nica_7": 3208513118223383620
+      "Cristal de la muerte cr\xF3nica_13": -1387579111667388445
+      "Cristal de la muerte cr\xF3nica_10": 1423670489895377704
+      "Cristal de la muerte cr\xF3nica_6": 7826985220019090163
+      "Cristal de la muerte cr\xF3nica_4": 3758218046594419256
+      "Cristal de la muerte cr\xF3nica_9": -3274412011877139732
+      "Cristal de la muerte cr\xF3nica_3": -2787896796710576311
+      "Cristal de la muerte cr\xF3nica_11": -7155708198966802166
+      "Cristal de la muerte cr\xF3nica_0": 8379427373173356442
+      "Cristal de la muerte cr\xF3nica_8": 3153861888922589960
+      "Cristal de la muerte cr\xF3nica_12": -3111740198501006359
+      "Cristal de la muerte cr\xF3nica_1": 6426197611676440209
+      "Cristal de la muerte cr\xF3nica_2": -2500472877417325778
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

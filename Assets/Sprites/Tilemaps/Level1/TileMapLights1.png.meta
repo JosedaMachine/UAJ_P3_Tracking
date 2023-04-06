@@ -657,7 +657,7 @@ TextureImporter:
       213: 7445166620694180556
     second: TileMapLights1_217
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -677,6 +677,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -686,8 +688,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -708,9 +710,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -726,6 +733,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -5327,6 +5358,225 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TileMapLights1_15: 3201445333505081543
+      TileMapLights1_106: 6536450653659468320
+      TileMapLights1_163: -7685232190862844275
+      TileMapLights1_94: -7441341957274039528
+      TileMapLights1_140: 8786169490266477984
+      TileMapLights1_131: 8743460982130187389
+      TileMapLights1_55: 3630665685695270103
+      TileMapLights1_13: -5080043901587401712
+      TileMapLights1_197: 8085032018920952583
+      TileMapLights1_60: -4884200286895231968
+      TileMapLights1_119: -1578314011131046132
+      TileMapLights1_152: 5449689899317363315
+      TileMapLights1_89: 20247191720545114
+      TileMapLights1_2: -2548476345943897158
+      TileMapLights1_80: 955360254000893499
+      TileMapLights1_50: -3048275917061067638
+      TileMapLights1_35: 90761634704311505
+      TileMapLights1_128: -4001961485775693644
+      TileMapLights1_103: -8215948923737789773
+      TileMapLights1_141: 2115294857632475956
+      TileMapLights1_122: 2178859791719479435
+      TileMapLights1_173: 2297239242950987058
+      TileMapLights1_205: -2178067371984438109
+      TileMapLights1_116: 4439090712500665135
+      TileMapLights1_0: -5806692735303289922
+      TileMapLights1_70: -6976070093243781217
+      TileMapLights1_157: 5985268679031216464
+      TileMapLights1_26: -2211249685939481053
+      TileMapLights1_4: 161055425285150165
+      TileMapLights1_73: -2460523774388396811
+      TileMapLights1_79: -4812646148232945550
+      TileMapLights1_98: -8210389525905036186
+      TileMapLights1_22: -4173744945240288049
+      TileMapLights1_56: -4542989987866766160
+      TileMapLights1_90: 3701008826996458803
+      TileMapLights1_16: -3357169914018252570
+      TileMapLights1_161: 8832564841402728099
+      TileMapLights1_174: -6200943602703048909
+      TileMapLights1_194: 3705984155906397040
+      TileMapLights1_46: -7534998608759102498
+      TileMapLights1_187: 5343565663613985802
+      TileMapLights1_86: -170947552550250669
+      TileMapLights1_36: -8691035960381044632
+      TileMapLights1_109: 4695175099128827808
+      TileMapLights1_100: 6189754928489269026
+      TileMapLights1_118: -1105759993920441514
+      TileMapLights1_72: 3473592283825499940
+      TileMapLights1_110: -5945869825510093453
+      TileMapLights1_17: 2840218466723077497
+      TileMapLights1_108: -5174509610471868244
+      TileMapLights1_127: 625666701357337580
+      TileMapLights1_5: -2730159321279322614
+      TileMapLights1_193: 8938013659892705309
+      TileMapLights1_23: 8690793487502756308
+      TileMapLights1_59: -2942380161070271980
+      TileMapLights1_51: 2539809378496855246
+      TileMapLights1_123: -3574057247657708565
+      TileMapLights1_92: -4732740481021896979
+      TileMapLights1_121: -584620688994178374
+      TileMapLights1_136: 7038390606985884455
+      TileMapLights1_164: 7403554502604668997
+      TileMapLights1_11: 520098763445536972
+      TileMapLights1_126: 653420947281247338
+      TileMapLights1_185: -5122053511830787496
+      TileMapLights1_21: -2666869625066567616
+      TileMapLights1_132: -3894481241007360275
+      TileMapLights1_155: -8659414100802359262
+      TileMapLights1_120: -3706816550790597609
+      TileMapLights1_135: -477214731839688881
+      TileMapLights1_170: 2352142380065233298
+      TileMapLights1_210: -6838395775476671573
+      TileMapLights1_61: 333533930570991620
+      TileMapLights1_147: 142769335783770063
+      TileMapLights1_32: -1380434022239238432
+      TileMapLights1_9: -5514874429513298213
+      TileMapLights1_44: -5197038403550120754
+      TileMapLights1_57: 7446571723160128838
+      TileMapLights1_1: -7476016317818232304
+      TileMapLights1_158: 9112001748997810180
+      TileMapLights1_196: 6320211233179232018
+      TileMapLights1_84: 7699757694998828048
+      TileMapLights1_201: 7873807438681880692
+      TileMapLights1_165: -2331421034833618699
+      TileMapLights1_211: 2026723411160023263
+      TileMapLights1_217: 7445166620694180556
+      TileMapLights1_97: 1095479035185337892
+      TileMapLights1_204: 6799939426857163730
+      TileMapLights1_206: -1647039038018437045
+      TileMapLights1_171: -6155572384279112752
+      TileMapLights1_215: -311034604870352940
+      TileMapLights1_105: -5687839037326806302
+      TileMapLights1_139: 8557796434886821144
+      TileMapLights1_30: -5754762011122208150
+      TileMapLights1_177: 1165182207945083656
+      TileMapLights1_145: 3679456629145897739
+      TileMapLights1_176: 1120497868122848873
+      TileMapLights1_203: -5312907122000750120
+      TileMapLights1_150: -744146855736107198
+      TileMapLights1_153: 4392670919393206371
+      TileMapLights1_48: -4504958294016660282
+      TileMapLights1_148: -6902842651642717867
+      TileMapLights1_213: -701842816605303346
+      TileMapLights1_85: -476640995025837459
+      TileMapLights1_202: 200880390221056726
+      TileMapLights1_111: 4920875977827350015
+      TileMapLights1_78: -7769272511065809377
+      TileMapLights1_53: 2936474350474457607
+      TileMapLights1_76: -5032492393799707849
+      TileMapLights1_125: -1694865255585504265
+      TileMapLights1_63: -2712546352995407396
+      TileMapLights1_75: 7222858522533113073
+      TileMapLights1_192: 6940021834302188224
+      TileMapLights1_8: 8696358751147848543
+      TileMapLights1_160: -5875979128398124331
+      TileMapLights1_208: -5446976733573380576
+      TileMapLights1_41: -1399441708228263731
+      TileMapLights1_200: -8615976283155859869
+      TileMapLights1_69: 1211962252686493363
+      TileMapLights1_195: 4745694222973615345
+      TileMapLights1_137: -7057053183122465447
+      TileMapLights1_40: -8114026548429455154
+      TileMapLights1_209: -2118000389978060932
+      TileMapLights1_14: -3534978365842145309
+      TileMapLights1_58: 2058064110327954546
+      TileMapLights1_180: 8213289899620283750
+      TileMapLights1_191: -365191752588504540
+      TileMapLights1_186: -5631505869395679682
+      TileMapLights1_29: 9130032321013852434
+      TileMapLights1_68: -3497505740451145703
+      TileMapLights1_99: 8521280874006702468
+      TileMapLights1_159: -2954321888241987165
+      TileMapLights1_71: -435447371895071862
+      TileMapLights1_7: 1804446541496519397
+      TileMapLights1_28: 8434163922023339559
+      TileMapLights1_42: 7477709742977231039
+      TileMapLights1_178: -9088647560368487073
+      TileMapLights1_166: -8818778340009375290
+      TileMapLights1_81: -5921149058879713934
+      TileMapLights1_67: 5574240960485240367
+      TileMapLights1_27: 2180844646379010832
+      TileMapLights1_96: -2926895721953828869
+      TileMapLights1_207: 8555384909977382148
+      TileMapLights1_214: 7607760179452007246
+      TileMapLights1_172: -8695069424527219963
+      TileMapLights1_6: 3189470209118197846
+      TileMapLights1_107: -3911649893510277583
+      TileMapLights1_179: 5918480391830608438
+      TileMapLights1_38: -185526273090447786
+      TileMapLights1_190: -705373397841380631
+      TileMapLights1_25: 1602414434010902071
+      TileMapLights1_37: -4361190053566382274
+      TileMapLights1_168: -8913959337444591509
+      TileMapLights1_31: -6847973132572812615
+      TileMapLights1_34: 6632523222226698660
+      TileMapLights1_104: -1713329730450427820
+      TileMapLights1_24: -4002802321580765681
+      TileMapLights1_45: 7749050980363018574
+      TileMapLights1_18: 6365216384404231823
+      TileMapLights1_83: 1789753877792765059
+      TileMapLights1_167: -7074257297655485517
+      TileMapLights1_101: 3652371739511758715
+      TileMapLights1_112: 6735206129233496784
+      TileMapLights1_115: -2411105905486216114
+      TileMapLights1_144: 2797054173393575440
+      TileMapLights1_65: 1670298890518637328
+      TileMapLights1_113: -2562948965464109049
+      TileMapLights1_138: 6604562896597389513
+      TileMapLights1_54: -5125679816477537587
+      TileMapLights1_154: -8199403737477747183
+      TileMapLights1_88: -6893458285877109969
+      TileMapLights1_117: 5680779599045586558
+      TileMapLights1_146: -8897743587699624162
+      TileMapLights1_12: 6552572935481525202
+      TileMapLights1_33: 7767432541386571217
+      TileMapLights1_95: -2330262138710824986
+      TileMapLights1_3: -3786352189794758421
+      TileMapLights1_47: -281929431721699960
+      TileMapLights1_93: 3064694742090250417
+      TileMapLights1_114: -1181393739024845332
+      TileMapLights1_183: 8488291475063305764
+      TileMapLights1_175: -4927984088496412967
+      TileMapLights1_188: -4201755549107937670
+      TileMapLights1_43: -5811500169332279573
+      TileMapLights1_199: 6038181066236421833
+      TileMapLights1_19: -2191851710955135875
+      TileMapLights1_182: 3166017311426856358
+      TileMapLights1_102: -2747727842061715080
+      TileMapLights1_169: 5711504124012093325
+      TileMapLights1_130: -2255921251539221167
+      TileMapLights1_189: -9132378990270149778
+      TileMapLights1_151: -2571949782135356785
+      TileMapLights1_77: -5409130952049275286
+      TileMapLights1_143: 9144652953703999574
+      TileMapLights1_198: 3502458766280356042
+      TileMapLights1_49: -4950780231778674967
+      TileMapLights1_39: 2608591073870351233
+      TileMapLights1_133: -5773484205926586278
+      TileMapLights1_66: 3615575032355410051
+      TileMapLights1_216: 3687862800068515201
+      TileMapLights1_52: 6302607991791821401
+      TileMapLights1_62: -9006349148461969511
+      TileMapLights1_124: 5124999710163249676
+      TileMapLights1_134: -4368830503815543888
+      TileMapLights1_149: -3747955755947807543
+      TileMapLights1_129: -4552641517685200046
+      TileMapLights1_142: -3762150317783988607
+      TileMapLights1_184: -4452267250690720868
+      TileMapLights1_212: -792931432467806821
+      TileMapLights1_10: 1668675035768963629
+      TileMapLights1_156: 7021955711080454772
+      TileMapLights1_82: 3698484440165591589
+      TileMapLights1_20: 1662232157806040084
+      TileMapLights1_64: -877685480855442680
+      TileMapLights1_87: 4447343353433776602
+      TileMapLights1_162: 3361258089072692705
+      TileMapLights1_91: 6780926070176689690
+      TileMapLights1_181: -3863690178214265676
+      TileMapLights1_74: -7572776176859963793
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

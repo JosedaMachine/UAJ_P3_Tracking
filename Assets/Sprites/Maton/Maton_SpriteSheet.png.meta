@@ -51,7 +51,7 @@ TextureImporter:
       213: -677726585355331997
     second: Maton_SpriteSheet2_15
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -71,6 +71,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -80,8 +82,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -102,9 +104,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -120,6 +127,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -479,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Maton_SpriteSheet2_14: -7725429335290467305
+      Maton_SpriteSheet2_11: -5038949098628205637
+      Maton_SpriteSheet2_12: 3876572628692290658
+      Maton_SpriteSheet2_1: 3696777729310325351
+      Maton_SpriteSheet2_15: -677726585355331997
+      Maton_SpriteSheet2_6: 6537529899278606796
+      Maton_SpriteSheet2_9: 4746044683643962490
+      Maton_SpriteSheet2_10: 921906133388382121
+      Maton_SpriteSheet2_2: -6350798302898873738
+      Maton_SpriteSheet2_5: -5870708455264703956
+      Maton_SpriteSheet2_8: 642247147615677355
+      Maton_SpriteSheet2_0: -7190978075018386588
+      Maton_SpriteSheet2_7: -7454957601050754107
+      Maton_SpriteSheet2_4: -3456688027951029865
+      Maton_SpriteSheet2_3: 377143178249579875
+      Maton_SpriteSheet2_13: -5015425089077627006
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

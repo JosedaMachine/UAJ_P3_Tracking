@@ -357,7 +357,7 @@ TextureImporter:
       213: -5055919272950883533
     second: Itch release raw tileset 01 shades_117
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -377,6 +377,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -386,8 +388,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -408,9 +410,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -498,6 +505,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2999,6 +3018,125 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Itch release raw tileset 01 shades_97: -68733894434467852
+      Itch release raw tileset 01 shades_12: -8879568633509558677
+      Itch release raw tileset 01 shades_56: 7985178811380800000
+      Itch release raw tileset 01 shades_31: -4137737248798813474
+      Itch release raw tileset 01 shades_102: 3164132105954008484
+      Itch release raw tileset 01 shades_99: 7710684504859946116
+      Itch release raw tileset 01 shades_23: 5378322627139431206
+      Itch release raw tileset 01 shades_54: -8784157522638749628
+      Itch release raw tileset 01 shades_14: -4192241508660785278
+      Itch release raw tileset 01 shades_105: -5883137966609099181
+      Itch release raw tileset 01 shades_44: 9013316675373890787
+      Itch release raw tileset 01 shades_0: 1610249728672015659
+      Itch release raw tileset 01 shades_106: 8305359974397154455
+      Itch release raw tileset 01 shades_21: 5244473146672451731
+      Itch release raw tileset 01 shades_90: -7120952637365732396
+      Itch release raw tileset 01 shades_112: 3600840307272762271
+      Itch release raw tileset 01 shades_30: 3235236919685454916
+      Itch release raw tileset 01 shades_36: 1331321946654632745
+      Itch release raw tileset 01 shades_4: -8105498201300313562
+      Itch release raw tileset 01 shades_15: -6169757918502490248
+      Itch release raw tileset 01 shades_116: -2040919436927299113
+      Itch release raw tileset 01 shades_114: 7757831780190992518
+      Itch release raw tileset 01 shades_10: 247852900863122679
+      Itch release raw tileset 01 shades_60: 9009071699952018105
+      Itch release raw tileset 01 shades_19: -7602521958900885116
+      Itch release raw tileset 01 shades_74: 8795894752514442687
+      Itch release raw tileset 01 shades_81: -4137222479401177491
+      Itch release raw tileset 01 shades_62: 2896104242054853983
+      Itch release raw tileset 01 shades_79: 4777999795051608359
+      Itch release raw tileset 01 shades_66: 2977257582567342845
+      Itch release raw tileset 01 shades_47: 2540420162786249225
+      Itch release raw tileset 01 shades_68: 3427745366806339115
+      Itch release raw tileset 01 shades_61: -1123709856714783426
+      Itch release raw tileset 01 shades_101: 4987301372796722191
+      Itch release raw tileset 01 shades_28: 2927870759865509118
+      Itch release raw tileset 01 shades_37: -3752927661721542119
+      Itch release raw tileset 01 shades_25: 3023381164477248706
+      Itch release raw tileset 01 shades_13: 2683284944415766329
+      Itch release raw tileset 01 shades_18: 5515945497898631577
+      Itch release raw tileset 01 shades_52: 8497744376701913140
+      Itch release raw tileset 01 shades_53: 6232225162484070567
+      Itch release raw tileset 01 shades_104: -8503201448351261050
+      Itch release raw tileset 01 shades_59: 7529333208470572984
+      Itch release raw tileset 01 shades_32: 2655626793553835946
+      Itch release raw tileset 01 shades_40: 3856052826725485559
+      Itch release raw tileset 01 shades_34: 8083211652139100108
+      Itch release raw tileset 01 shades_115: -6366725210031065598
+      Itch release raw tileset 01 shades_39: 5186305801761428100
+      Itch release raw tileset 01 shades_29: -8800949166561812897
+      Itch release raw tileset 01 shades_91: 8894842596691997093
+      Itch release raw tileset 01 shades_107: 5255643236862334490
+      Itch release raw tileset 01 shades_6: -6347128314532946714
+      Itch release raw tileset 01 shades_26: -3316334625655964264
+      Itch release raw tileset 01 shades_50: -577540225560114335
+      Itch release raw tileset 01 shades_22: -1492652335747240269
+      Itch release raw tileset 01 shades_1: 7901598496790025315
+      Itch release raw tileset 01 shades_17: 1183150490578669690
+      Itch release raw tileset 01 shades_76: 2550626305613733981
+      Itch release raw tileset 01 shades_94: 3520374575437566088
+      Itch release raw tileset 01 shades_42: 3809135656148867951
+      Itch release raw tileset 01 shades_3: 46167606712862407
+      Itch release raw tileset 01 shades_78: -1241939654278038144
+      Itch release raw tileset 01 shades_2: -3808166952845950680
+      Itch release raw tileset 01 shades_55: 6966330441428085607
+      Itch release raw tileset 01 shades_87: 4526847630204366615
+      Itch release raw tileset 01 shades_75: 4581617191775622624
+      Itch release raw tileset 01 shades_7: -8444830072146321961
+      Itch release raw tileset 01 shades_86: 7412334401550114960
+      Itch release raw tileset 01 shades_24: -8234286215408489465
+      Itch release raw tileset 01 shades_65: -6432269819061891858
+      Itch release raw tileset 01 shades_77: -1978800392997161158
+      Itch release raw tileset 01 shades_103: 5672196720143924037
+      Itch release raw tileset 01 shades_109: 5544745165259336046
+      Itch release raw tileset 01 shades_96: 6148711747395475785
+      Itch release raw tileset 01 shades_58: 7862419924611627786
+      Itch release raw tileset 01 shades_57: 6635537605592374817
+      Itch release raw tileset 01 shades_92: -8592809059401032124
+      Itch release raw tileset 01 shades_43: -2347443557281410238
+      Itch release raw tileset 01 shades_67: 3455993274992428062
+      Itch release raw tileset 01 shades_71: 3475206153300393956
+      Itch release raw tileset 01 shades_27: -7578147991861405825
+      Itch release raw tileset 01 shades_33: 7363732780421043320
+      Itch release raw tileset 01 shades_63: 3714706069926071831
+      Itch release raw tileset 01 shades_35: -4619190200125702226
+      Itch release raw tileset 01 shades_73: 4842651374104024122
+      Itch release raw tileset 01 shades_108: -1650121949071551008
+      Itch release raw tileset 01 shades_11: 28926841959202094
+      Itch release raw tileset 01 shades_100: -1541386943328825850
+      Itch release raw tileset 01 shades_80: 4782955473646337051
+      Itch release raw tileset 01 shades_51: 6356015667594022630
+      Itch release raw tileset 01 shades_98: 8954727301405669734
+      Itch release raw tileset 01 shades_46: -7808123057739648904
+      Itch release raw tileset 01 shades_111: -2211329680593064107
+      Itch release raw tileset 01 shades_16: 5162458799065228230
+      Itch release raw tileset 01 shades_9: 8561249634068966659
+      Itch release raw tileset 01 shades_83: 8367145171377251452
+      Itch release raw tileset 01 shades_113: 332068988486236135
+      Itch release raw tileset 01 shades_110: 4711842432089269965
+      Itch release raw tileset 01 shades_5: 5400855103735597614
+      Itch release raw tileset 01 shades_64: -1921691045102313365
+      Itch release raw tileset 01 shades_72: 7508773008348944295
+      Itch release raw tileset 01 shades_49: -1133337506114494359
+      Itch release raw tileset 01 shades_8: 4831506319893273372
+      Itch release raw tileset 01 shades_84: 8160829789042045211
+      Itch release raw tileset 01 shades_88: -7104150879772228818
+      Itch release raw tileset 01 shades_95: -5518644935669666400
+      Itch release raw tileset 01 shades_117: -5055919272950883533
+      Itch release raw tileset 01 shades_38: -7099658878198605271
+      Itch release raw tileset 01 shades_69: -2989468088635284076
+      Itch release raw tileset 01 shades_20: 8649374388720557843
+      Itch release raw tileset 01 shades_45: 4513898297384263765
+      Itch release raw tileset 01 shades_70: -644853391981405258
+      Itch release raw tileset 01 shades_82: -619360555523646912
+      Itch release raw tileset 01 shades_41: 1424137721492767192
+      Itch release raw tileset 01 shades_48: 536782471006967286
+      Itch release raw tileset 01 shades_89: 8138824062833714851
+      Itch release raw tileset 01 shades_85: 948244553784091170
+      Itch release raw tileset 01 shades_93: 3795231391823426979
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

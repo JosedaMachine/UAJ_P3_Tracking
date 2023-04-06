@@ -84,7 +84,7 @@ TextureImporter:
       213: 3820744004472402187
     second: FlasherSheetBien_26
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -104,6 +104,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -113,8 +115,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -135,9 +137,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -153,6 +160,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -743,6 +774,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      FlasherSheetBien_17: 6463619435018420692
+      FlasherSheetBien_19: -6039039289934120833
+      FlasherSheetBien_5: -3992604114507674348
+      FlasherSheetBien_20: 1183252886182032862
+      FlasherSheetBien_11: 4247094508879866470
+      FlasherSheetBien_23: 6128842907960931885
+      FlasherSheetBien_22: -2166560093070657109
+      FlasherSheetBien_8: -6087872750780569282
+      FlasherSheetBien_4: -9119396879134551962
+      FlasherSheetBien_2: 2957487694418399725
+      FlasherSheetBien_18: 6496687666841361858
+      FlasherSheetBien_25: 3087583808968483562
+      FlasherSheetBien_10: 3161006575472315346
+      FlasherSheetBien_7: 3928289746138710238
+      FlasherSheetBien_1: -2496206628821958459
+      FlasherSheetBien_3: -5309297570222135616
+      FlasherSheetBien_15: 1942007822726066459
+      FlasherSheetBien_21: 8567903250514095184
+      FlasherSheetBien_6: -2094330721731990088
+      FlasherSheetBien_16: 8143963380926442782
+      FlasherSheetBien_0: -605806192724889198
+      FlasherSheetBien_13: 5294115515205965706
+      FlasherSheetBien_24: -5854119533298424835
+      FlasherSheetBien_26: 3820744004472402187
+      FlasherSheetBien_9: 7607497744586034713
+      FlasherSheetBien_14: -313417747703764191
+      FlasherSheetBien_12: 3628261102725441408
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

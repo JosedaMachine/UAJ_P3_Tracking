@@ -105,7 +105,7 @@ TextureImporter:
       213: 3171238402591285374
     second: RalenFinal5_33
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -125,6 +125,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,8 +136,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -156,9 +158,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -174,6 +181,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -911,6 +942,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      RalenFinal5_9: 1370835712876378138
+      RalenFinal5_25: 8056734345131403482
+      RalenFinal5_13: 6945959075685941372
+      RalenFinal5_6: 7054088270171237807
+      RalenFinal5_12: -2907274303575893865
+      RalenFinal5_28: 50806821084591853
+      RalenFinal5_27: 1818284552088285327
+      RalenFinal5_32: 5326690026386018374
+      RalenFinal5_14: -5346594744470085695
+      RalenFinal5_20: -7572153725248612399
+      RalenFinal5_26: 7898153351310711010
+      RalenFinal5_10: -4844976421223288884
+      RalenFinal5_5: 8371681936894882953
+      RalenFinal5_31: -3496407446899551187
+      RalenFinal5_17: 2475551443487346332
+      RalenFinal5_3: -5410093177853029624
+      RalenFinal5_15: -3431985741382389805
+      RalenFinal5_24: 2581603846531937111
+      RalenFinal5_7: -2216699905969309258
+      RalenFinal5_0: 7577399557985054406
+      RalenFinal5_1: -6910856751170916368
+      RalenFinal5_30: -3469639599037558840
+      RalenFinal5_33: 3171238402591285374
+      RalenFinal5_22: -2371139529971544724
+      RalenFinal5_21: -1059635995861253166
+      RalenFinal5_4: -316445316126682816
+      RalenFinal5_8: -318765862354963815
+      RalenFinal5_19: -5779010947446096942
+      RalenFinal5_2: 8013102389394888542
+      RalenFinal5_18: -2610293596129623067
+      RalenFinal5_11: 1896826445486666544
+      RalenFinal5_29: -7482071461582542390
+      RalenFinal5_16: 656580750076697359
+      RalenFinal5_23: 8554859439742426453
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

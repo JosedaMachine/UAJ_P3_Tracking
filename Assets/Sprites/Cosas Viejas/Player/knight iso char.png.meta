@@ -117,7 +117,7 @@ TextureImporter:
       213: -5099988247661734785
     second: knight iso char_37
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -137,6 +137,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,8 +148,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -168,9 +170,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -198,6 +205,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1019,6 +1038,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      knight iso char_17: -2416868336525821661
+      knight iso char_37: -5099988247661734785
+      Izq_2: -990092616584367461
+      Arriba_3: 4000163254294379331
+      knight iso char_25: -9149377109942846611
+      knight iso char_30: 5300698792022960033
+      Derecha_1: -7768854840454839356
+      Derecha_3: -869844800212484076
+      knight iso char_33: -7620290069001200585
+      knight iso char_18: -279932718312071024
+      knight iso char_32: -1386507094573195571
+      Abajo_1: -6880442741611512763
+      knight iso char_29: 642533730055142838
+      Abajo_Idle: -264092262714446804
+      knight iso char_26: -5258309579313820801
+      knight iso char_19: -2183885405667234357
+      knight iso char_23: -8375667399758866701
+      Arriba_4: 5955277157667989289
+      knight iso char_36: -5535416146643541403
+      knight iso char_35: -8042754611445815119
+      knight iso char_31: -7898644507897402671
+      knight iso char_34: -5623851869961747901
+      knight iso char_28: -6494140404292777793
+      Mov_izq: -8513300391518703103
+      knight iso char_1: -4925969714678911907
+      Arriba_2: -1093632932897208685
+      knight iso char_2: 5303643846532001539
+      Abajo_2: 8296323142174906616
+      Idle_izquierda: -6344318404495178492
+      Arriba_5: 3363236206488051538
+      knight iso char_24: -2905320976025444623
+      knight iso char_3: 7806182272274437663
+      Abajo_3: 7215913467725104042
+      Arriba_1: -3689961770462038466
+      Idle_Derecha: 8332665537136453904
+      knight iso char_27: 1759411679467984853
+      Abajo_4: 6103754341237612700
+      Abajo_5: -2731566385070438126
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

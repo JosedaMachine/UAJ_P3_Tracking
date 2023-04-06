@@ -192,7 +192,7 @@ TextureImporter:
       213: 4868968226261939140
     second: TileMapLevel1Suelov2_62
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -212,6 +212,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -221,8 +223,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -243,9 +245,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -261,6 +268,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1607,6 +1638,70 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TileMapLevel1Suelov2_4: -6820874128911293075
+      TileMapLevel1Suelov2_10: 8399734087955239958
+      TileMapLevel1Suelov2_11: -934803186327065889
+      TileMapLevel1Suelov2_26: 6166543675840573806
+      TileMapLevel1Suelov2_3: 4168547438841891610
+      TileMapLevel1Suelov2_34: -5290388595132017877
+      TileMapLevel1Suelov2_29: -8138628813797153258
+      TileMapLevel1Suelov2_33: 410794993523576032
+      TileMapLevel1Suelov2_45: 2273751064613747075
+      TileMapLevel1Suelov2_61: 213672687476304535
+      TileMapLevel1Suelov2_14: -878834983498933558
+      TileMapLevel1Suelov2_52: -4869640926441371669
+      TileMapLevel1Suelov2_16: -4556724108178963798
+      TileMapLevel1Suelov2_17: -7945173429412913520
+      TileMapLevel1Suelov2_48: -1559879838221497545
+      TileMapLevel1Suelov2_8: 3131965738161806168
+      TileMapLevel1Suelov2_0: -7313542854960313909
+      TileMapLevel1Suelov2_35: -371711872045228973
+      TileMapLevel1Suelov2_49: -215082735924709794
+      TileMapLevel1Suelov2_13: 1323934593797427032
+      TileMapLevel1Suelov2_38: -2538584350980126949
+      TileMapLevel1Suelov2_57: -1399753562555593586
+      TileMapLevel1Suelov2_25: 3151239597625850034
+      TileMapLevel1Suelov2_58: 112851528071171479
+      TileMapLevel1Suelov2_5: -3746673213536135450
+      TileMapLevel1Suelov2_43: -75396346615184193
+      TileMapLevel1Suelov2_7: -8391622928951646311
+      TileMapLevel1Suelov2_47: -455860773461175374
+      TileMapLevel1Suelov2_31: 2154554910999713663
+      TileMapLevel1Suelov2_44: 8130560859536218950
+      TileMapLevel1Suelov2_53: 1967682086008544895
+      TileMapLevel1Suelov2_28: 9175573033658381138
+      TileMapLevel1Suelov2_46: 5249430072059281401
+      TileMapLevel1Suelov2_15: 2179676246288219714
+      TileMapLevel1Suelov2_12: -7902334490237155172
+      TileMapLevel1Suelov2_37: 5973714867439838135
+      TileMapLevel1Suelov2_50: 8078885969132371267
+      TileMapLevel1Suelov2_18: -2902530695168039110
+      TileMapLevel1Suelov2_54: 5390484126957384943
+      TileMapLevel1Suelov2_24: 7864179101742131928
+      TileMapLevel1Suelov2_56: 4461493551413103667
+      TileMapLevel1Suelov2_55: 9107576695241386043
+      TileMapLevel1Suelov2_36: 999761303613731171
+      TileMapLevel1Suelov2_62: 4868968226261939140
+      TileMapLevel1Suelov2_32: -352454146368165446
+      TileMapLevel1Suelov2_9: 7039582054313768253
+      TileMapLevel1Suelov2_42: -5685863365456209913
+      TileMapLevel1Suelov2_59: 2010403932540974033
+      TileMapLevel1Suelov2_6: 3781032401254828696
+      TileMapLevel1Suelov2_22: -504517832267639249
+      TileMapLevel1Suelov2_27: -4686568195814127702
+      TileMapLevel1Suelov2_1: 5179952899164777571
+      TileMapLevel1Suelov2_51: -6429018588622334312
+      TileMapLevel1Suelov2_60: -9107240714998040047
+      TileMapLevel1Suelov2_2: -3134888501307010237
+      TileMapLevel1Suelov2_30: -3287928421488734653
+      TileMapLevel1Suelov2_41: -2494747647578783515
+      TileMapLevel1Suelov2_19: 8538769149854990912
+      TileMapLevel1Suelov2_40: 5256183791909019936
+      TileMapLevel1Suelov2_21: 4456572967748831089
+      TileMapLevel1Suelov2_39: 893369560727940780
+      TileMapLevel1Suelov2_23: 2973763753842446243
+      TileMapLevel1Suelov2_20: 2417973128929345412
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

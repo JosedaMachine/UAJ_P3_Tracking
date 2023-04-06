@@ -120,7 +120,7 @@ TextureImporter:
       213: -3303857934592167335
     second: LightBandit_Spritesheet_38
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -140,6 +140,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -149,8 +151,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -171,9 +173,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -189,6 +196,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1031,6 +1062,46 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      LightBandit_Spritesheet_27: -6471978273961675459
+      LightBandit_Spritesheet_0: -3282197894321580119
+      LightBandit_Spritesheet_5: -930612475021976227
+      LightBandit_Spritesheet_18: -6250892376657897870
+      LightBandit_Spritesheet_10: 5810813233557566719
+      LightBandit_Spritesheet_33: -5191620932058775164
+      LightBandit_Spritesheet_32: 1254409765779767661
+      LightBandit_Spritesheet_15: -1514098059790102097
+      LightBandit_Spritesheet_7: 4406612656549873857
+      LightBandit_Spritesheet_17: 2952055447138272760
+      LightBandit_Spritesheet_34: -5250445056990526306
+      LightBandit_Spritesheet_19: 290606397865625769
+      LightBandit_Spritesheet_37: 8038561968037600321
+      LightBandit_Spritesheet_25: -1630164726331490021
+      LightBandit_Spritesheet_13: 2999988412345717646
+      LightBandit_Spritesheet_9: 975594238340556729
+      LightBandit_Spritesheet_30: 6207390469477450917
+      LightBandit_Spritesheet_31: -3782599932638210699
+      LightBandit_Spritesheet_3: -5743190006614381450
+      LightBandit_Spritesheet_26: -1043964063110792323
+      LightBandit_Spritesheet_11: 437731384108799278
+      LightBandit_Spritesheet_22: 2967821953389213594
+      LightBandit_Spritesheet_4: 8387727907788071781
+      LightBandit_Spritesheet_14: 5324669158060895334
+      LightBandit_Spritesheet_8: 4697167181876084208
+      LightBandit_Spritesheet_23: 1760037824321947344
+      LightBandit_Spritesheet_38: -3303857934592167335
+      LightBandit_Spritesheet_6: 7106211878397669518
+      LightBandit_Spritesheet_12: 297945651868495452
+      LightBandit_Spritesheet_35: 1481595764554171466
+      LightBandit_Spritesheet_16: 4857924587637997832
+      LightBandit_Spritesheet_36: -8761846595876868902
+      LightBandit_Spritesheet_2: -8134177513646057416
+      LightBandit_Spritesheet_1: -1564967237655837047
+      LightBandit_Spritesheet_20: -2494624750399617676
+      LightBandit_Spritesheet_29: -5684466150020860113
+      LightBandit_Spritesheet_21: -9115250171684967442
+      LightBandit_Spritesheet_28: -2816247213303443842
+      LightBandit_Spritesheet_24: -2352177786912749531
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
