@@ -27,6 +27,11 @@ public class Death : MonoBehaviour
         {
             AudioManager.instance.StopAllSFX();
             Instantiate(muerto, transform.position, Quaternion.identity);
+            
+            // TODO: Forzar envio de bloqueo (De lo contrario si mueres en mitad del parry no se manda el evento)
+            
+            // TODO: Evento de muerte
+
             Destroy(this.gameObject);  
         }
     }

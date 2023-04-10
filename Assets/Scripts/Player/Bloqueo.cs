@@ -19,6 +19,9 @@ public class Bloqueo : MonoBehaviour
     PowerUpPurple purple;
     float time;
 
+    // True si se bloqueó algo en el último frame
+    bool hasBlocked = false;
+    public bool HasBlocked() => hasBlocked;
     private void Awake()
     {
         collisionArea = this.GetComponent<CapsuleCollider2D>();
@@ -38,7 +41,7 @@ public class Bloqueo : MonoBehaviour
     {
         collisionArea.enabled = true;
         time = 0;
-
+        hasBlocked = false;
     }
 
     private void OnDisable()
@@ -52,25 +55,28 @@ public class Bloqueo : MonoBehaviour
         {
             if (collision.GetComponent<Bullet>() != null) // Caso powerup Rojo
             {
+                hasBlocked = true;
                 if (!purple.enabled)
                 {
                     Destroy(collision.gameObject);
                 }
                 activPow.AddToCont();
-                Debug.Log("Parryada");
+                //Debug.Log("Parryada");
             }
             if (collision.GetComponent<PrestBullet>() != null && purple.enabled == false) 
             {
+                hasBlocked = true;
                 AudioManager.instance.Play(AudioManager.ESounds.Bloqueo3);
                 Destroy(collision.gameObject);
-                Debug.Log("BALA DESTRUIDA PREST");
+                //Debug.Log("BALA DESTRUIDA PREST");
 
             }
             if (collision.GetComponent<TurretBullet>() != null && purple.enabled == false) 
             {
+                hasBlocked = true;
                 AudioManager.instance.Play(AudioManager.ESounds.Bloqueo3);
                 Destroy(collision.gameObject);
-                Debug.Log("BALA DESTRUIDA TURRET");
+                //Debug.Log("BALA DESTRUIDA TURRET");
 
             }
         }

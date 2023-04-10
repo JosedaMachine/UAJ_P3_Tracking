@@ -150,7 +150,7 @@ public class PowerUpManager : MonoBehaviour
                 // Desactiva el power-up activo y su indicador
                 if (currentPowerUp != null)
                 {
-                    Debug.Log("Desactivo");
+                    //Debug.Log("Desactivo");
                     currentPowerUp.enabled = false;
                     image.enabled = false;
                     activo = false;
@@ -158,7 +158,7 @@ public class PowerUpManager : MonoBehaviour
 
                 // Activa el power-up indicado
                 powerUp.enabled = true;
-                Debug.Log("Componente power-up " + powerUpName + " activado.");
+                //Debug.Log("Componente power-up " + powerUpName + " activado.");
 
                 currentPowerUp = powerUp;
 
@@ -189,7 +189,7 @@ public class PowerUpManager : MonoBehaviour
 
         if (powerUp == null)
         {
-            Debug.Log("Componente power-up " + powerUpName + " no encontrado. Se ignora.");
+            //Debug.Log("Componente power-up " + powerUpName + " no encontrado. Se ignora.");
         }
         else
         {
@@ -200,7 +200,7 @@ public class PowerUpManager : MonoBehaviour
             activo = false;
             currentPowerUp = null;
             image.enabled = false;
-            Debug.Log("Componente power-up " + powerUpName + " Desactivado.");
+            //Debug.Log("Componente power-up " + powerUpName + " Desactivado.");
         }
     }
 

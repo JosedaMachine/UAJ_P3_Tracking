@@ -9,7 +9,7 @@ public class PowerUpRed : MonoBehaviour
     }
     private void OnEnable()
     {
-        Debug.Log("Rojo activado");
+        //Debug.Log("Rojo activado");
 
         if (death!=null)
         {
