@@ -7,6 +7,8 @@ public class Death : MonoBehaviour
     // Meter al jugador para que muera
 {
     [SerializeField] GameObject muerto = null;
+
+    [SerializeField] ParryEvent_AfterDeath parryEvent_AfterDeath;
     bool active = true;
 
     //habilita o desabilita la capacidad de morir.
@@ -27,10 +29,14 @@ public class Death : MonoBehaviour
         {
             AudioManager.instance.StopAllSFX();
             Instantiate(muerto, transform.position, Quaternion.identity);
-            
+
             // TODO: Forzar envio de bloqueo (De lo contrario si mueres en mitad del parry no se manda el evento)
-            
+
             // TODO: Evento de muerte
+
+            //Envío del evento de muerte
+            Bloqueo parry = GetComponent<Bloqueo>();
+            parryEvent_AfterDeath.playerDied(ref parry);
 
             Destroy(this.gameObject);  
         }
