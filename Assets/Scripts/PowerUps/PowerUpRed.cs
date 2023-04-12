@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
+using GameTracker;
 //Cuando esta activo desactiva el script que te permite morir y viceversa.
+
+
+//ALTERED BY ÁNGEL LÓPEZ FOR UAJ
 public class PowerUpRed : MonoBehaviour
 {
     Death death;
@@ -10,6 +14,11 @@ public class PowerUpRed : MonoBehaviour
     private void OnEnable()
     {
         //Debug.Log("Rojo activado");
+        ObtainRedPowerUpEvent e = TrackerSystem.GetInstance().CreateObtainRedPowerUpEvent();
+        
+        e.setLevel((short)GameManager.instance.actualScene);
+
+        TrackerSystem.GetInstance().trackEvent(e);
 
         if (death!=null)
         {

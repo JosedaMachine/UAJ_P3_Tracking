@@ -7,7 +7,7 @@ public class EventoBloqueo : MonoBehaviour
 {
     public float tamano = 5f;
     public LayerMask layerBalas;
-    
+
     private Bloqueo parry;
     private PowerUpPurple purple;
 
@@ -24,25 +24,26 @@ public class EventoBloqueo : MonoBehaviour
     {
         bool balasEnRadio = Physics2D.OverlapCircle(transform.position, tamano, layerBalas);
 
-        if(balasEnRadio && parry.enabled && !onHold)
+        if (balasEnRadio && parry.enabled && !onHold)
         {
-            //parryEvent = TrackerSystem.GetInstance().CreateParryEvent();
-            //parryEvent.setBlocked(parry.HasBlocked());
-            //parryEvent.setLevel((short)GameManager.instance.actualScene);
-            //parryEvent.setPurplePowerUp(purple.enabled);
+            ParryEvent e = TrackerSystem.GetInstance().CreateParryEvent();
+            e.setBlocked(parry.HasBlocked());
+            e.setLevel((short)GameManager.instance.actualScene);
+            e.setPurplePowerUp(purple.enabled);
             Debug.Log("EVENT: PARRY");
             onHold = true;
+
+            if (!parry.enabled && onHold)
+            {
+                e.setBlocked(parry.HasBlocked());
+                if (parry.HasBlocked())
+                    Debug.Log("EVENT: PARRY DONE");
+                TrackerSystem.GetInstance().trackEvent(parryEvent);
+                Debug.Log("EVENT: SEND");
+                onHold = false;
+            }
         }
-        
-        if(!parry.enabled && onHold)
-        {
-            //parryEvent.setBlocked(parry.HasBlocked());
-            if(parry.HasBlocked())
-                Debug.Log("EVENT: PARRY DONE");
-            //TrackerSystem.GetInstance().trackEvent(parryEvent);
-            Debug.Log("EVENT: SEND");
-            onHold = false;
-        }
+
     }
 
     private void OnDrawGizmos()
