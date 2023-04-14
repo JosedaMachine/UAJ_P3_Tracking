@@ -26,7 +26,7 @@ public class EventoBloqueo : MonoBehaviour
 
         if (balasEnRadio && parry.enabled && !onHold)
         {
-            ParryEvent e = TrackerSystem.GetInstance().CreateParryEvent();
+            ParryEvent e = TrackerSystem.GetInstance().CreateEvent<ParryEvent>();
             e.setBlocked(parry.HasBlocked());
             e.setLevel((short)GameManager.instance.actualScene);
             e.setPurplePowerUp(purple.enabled);

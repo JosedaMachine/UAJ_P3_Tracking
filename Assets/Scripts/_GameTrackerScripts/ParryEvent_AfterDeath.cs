@@ -21,7 +21,7 @@ public class ParryEvent_AfterDeath : MonoBehaviour
         {
             if (Input.GetKeyDown("joystick button 4") || Input.GetMouseButtonDown(1))
             {
-                ParryInputAfterDeath e = TrackerSystem.GetInstance().CreateParryInputAfterDeathEvent();
+                ParryInputAfterDeath e = TrackerSystem.GetInstance().CreateEvent<ParryInputAfterDeath>();
                 e.setTimeAfterDeath(timeStamp);
                 e.setLevel((short)GameManager.instance.actualScene);
                 TrackerSystem.GetInstance().trackEvent(e);
