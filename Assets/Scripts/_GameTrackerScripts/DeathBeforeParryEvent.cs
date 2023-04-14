@@ -8,7 +8,7 @@ public class DeathBeforeParryEvent : MonoBehaviour
     private Bloqueo parry;
     private float timeStamp;
     private bool startCounting;
-    public float timeWindow_UntilDeath = 0.3f;
+    public float timeWindow_UntilDeath = 0.3f;  //Ventana de tiempo entre parry y parry que cuenta para la muerte
 
 
     // Start is called before the first frame update
@@ -29,7 +29,8 @@ public class DeathBeforeParryEvent : MonoBehaviour
                 startCounting = false;
             }
         }
-        else if(parry.isActiveAndEnabled)
+        //Si se usa el parry se reinicia el timer
+        if(parry.isActiveAndEnabled)
         {
             timeStamp = 0.0f;
             startCounting = true;
@@ -44,7 +45,7 @@ public class DeathBeforeParryEvent : MonoBehaviour
             //Proceso del evento
             DieFromBulletEvent e = TrackerSystem.GetInstance().CreateDieFromBulletEvent();//Hay que hacer el evento die from bullet cabrones
             e.setLevel((short)GameManager.instance.actualScene);
-            e.setParryOnCooldown(parry.isActiveAndEnabled);
+            e.setTimeAfterParryFailed(timeStamp);
             TrackerSystem.GetInstance().trackEvent(e);
             Debug.Log("EVENT: DIED AFTER BLOCK");
         }

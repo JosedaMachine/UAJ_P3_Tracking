@@ -42,5 +42,6 @@ public class ParryEvent_AfterDeath : MonoBehaviour
     {
         //Se setea el tiempo
         timeStamp = 0.0f;
+        justDied=true;
     }
 }
