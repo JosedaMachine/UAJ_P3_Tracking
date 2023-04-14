@@ -58,3 +58,11 @@
   "EventType": "ParryInputAfterDeath",
   "Level": 1
 },
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "2862066253681816769",
+  "UserID": "9fbd299512798c14abc9a31cde5ebe89",
+  "TimeStamp": 1681473029,
+  "EventType": "RedPowerUpObtained",
+  "Level": 1
+},

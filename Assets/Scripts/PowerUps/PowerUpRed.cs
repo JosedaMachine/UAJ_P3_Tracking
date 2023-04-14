@@ -13,7 +13,8 @@ public class PowerUpRed : MonoBehaviour
     }
     private void OnEnable()
     {
-        //Debug.Log("Rojo activado");
+        //Evento del power up del game tracker
+        Debug.Log("EVENT:POWERUP_RED ADQUIRED");
         ObtainRedPowerUpEvent e = TrackerSystem.GetInstance().CreateEvent<ObtainRedPowerUpEvent>();
         
         e.setLevel((short)GameManager.instance.actualScene);
