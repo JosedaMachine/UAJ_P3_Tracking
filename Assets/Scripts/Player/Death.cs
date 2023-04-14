@@ -32,8 +32,15 @@ public class Death : MonoBehaviour
             // TODO: Forzar envio de bloqueo (De lo contrario si mueres en mitad del parry no se manda el evento)
 
             // TODO: Evento de muerte
-            GetComponent<ParryEvent_AfterDeath>().playerDied();
-            GetComponent<DeathBeforeParryEvent>().sendEventDiedFromBullet();
+            try
+            {
+                GetComponent<ParryEvent_AfterDeath>().playerDied();
+                GetComponent<DeathBeforeParryEvent>().sendEventDiedFromBullet();
+            }
+            catch
+            {
+                Debug.Log("NO tracker scripts asigned");
+            }
 
             //Envío del evento de muerte
             Destroy(this.gameObject);  
