@@ -1,0 +1,34 @@
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "6119624922483573541",
+  "UserID": "acc174c27651c9149a9e8f9b648e0838",
+  "TimeStamp": 1681471004,
+  "EventType": "Die From Bullet",
+  "Level": 3,
+  "Parry_On_Cooldown": 0.0
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "8750605105395259510",
+  "UserID": "acc174c27651c9149a9e8f9b648e0838",
+  "TimeStamp": 1681471295,
+  "EventType": "RedPowerUpObtained",
+  "Level": 3
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "6008643621887889436",
+  "UserID": "acc174c27651c9149a9e8f9b648e0838",
+  "TimeStamp": 1681471752,
+  "EventType": "RedPowerUpObtained",
+  "Level": 3
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "6008643621887889436",
+  "UserID": "acc174c27651c9149a9e8f9b648e0838",
+  "TimeStamp": 1681471775,
+  "EventType": "Die From Bullet",
+  "Level": 3,
+  "Parry_On_Cooldown": 0.0
+},

@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using GameTracker;
+using UnityEngine.Analytics;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,6 +29,19 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
+
+            //Inicializacion de Tracker
+            ISerializer serializer = new JsonSerializer();
+            IPersistence fp = new FilePersistence(ref serializer);
+            TrackerSystem.Init("Neon_Rider", AnalyticsSessionInfo.sessionId.ToString(), AnalyticsSessionInfo.userId, ref fp);
+
+            //Posible adiceion de ServerPersistence
+            //IPersistence sp = new ServerPersistence(ref serializer);
+            //TrackerSystem.GetInstance().AddPersistence(ref sp);
+
+
+            //Iniciar Tracker
+            TrackerSystem.GetInstance().Start();
         }
         else
         {

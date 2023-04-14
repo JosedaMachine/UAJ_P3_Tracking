@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
-
+using GameTracker;
 
 public class MainMenu : MonoBehaviour
 {
@@ -21,6 +21,8 @@ public class MainMenu : MonoBehaviour
 
     public void Quit() // Cierra el juego
     {
+        //Finalizar Tracker
+        TrackerSystem.GetInstance().Stop();
         Application.Quit();
     }
 

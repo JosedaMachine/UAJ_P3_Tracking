@@ -16,7 +16,7 @@ public class EventoBloqueo : MonoBehaviour
 
     private void Awake()
     {
-        purple = GetComponent<PowerUpPurple>();
+        purple = GetComponentInParent<PowerUpPurple>();
         parry = GetComponentInParent<Bloqueo>();
     }
 
