@@ -34,7 +34,7 @@ public class Death : MonoBehaviour
             // TODO: Evento de muerte
             try
             {
-                GetComponent<ParryEvent_AfterDeath>().playerDied();
+                muerto.GetComponent<ParryEvent_AfterDeath>().playerDied();
                 GetComponent<DeathBeforeParryEvent>().sendEventDiedFromBullet();
             }
             catch

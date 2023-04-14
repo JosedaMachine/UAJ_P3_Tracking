@@ -32,3 +32,29 @@
   "Level": 3,
   "Parry_On_Cooldown": 0.0
 },
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "2590966352800633549",
+  "UserID": "9fbd299512798c14abc9a31cde5ebe89",
+  "TimeStamp": 1681472294,
+  "EventType": "Die From Bullet",
+  "Level": 3,
+  "Parry_On_Cooldown": 0.129393518
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4173639472355610551",
+  "UserID": "9fbd299512798c14abc9a31cde5ebe89",
+  "TimeStamp": 1681472393,
+  "EventType": "Die From Bullet",
+  "Level": 1,
+  "Parry_On_Cooldown": 0.0
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "2321557139525629751",
+  "UserID": "9fbd299512798c14abc9a31cde5ebe89",
+  "TimeStamp": 1681472763,
+  "EventType": "ParryInputAfterDeath",
+  "Level": 1
+},
