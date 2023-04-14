@@ -42,9 +42,9 @@ public class DeathBeforeParryEvent : MonoBehaviour
         if(startCounting)
         {
             //Proceso del evento
-            DieFromBulletEvent e = TrackerSystem.GetInstance().CreateDieFromBulletEvent();//Hay que hacer el evento die from bullet cabrones
+            DieFromBulletEvent e = TrackerSystem.GetInstance().CreateDieFromBulletEvent();
             e.setLevel((short)GameManager.instance.actualScene);
-            e.setParryOnCooldown(parry.isActiveAndEnabled);
+            e.setParryOnCooldown(timeStamp <= timeWindow_UntilDeath);
             TrackerSystem.GetInstance().trackEvent(e);
             Debug.Log("EVENT: DIED AFTER BLOCK");
         }
