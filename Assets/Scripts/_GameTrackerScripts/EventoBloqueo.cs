@@ -28,7 +28,7 @@ public class EventoBloqueo : MonoBehaviour
         {
             ParryEvent e = TrackerSystem.GetInstance().CreateEvent<ParryEvent>();
             e.setBlocked(parry.HasBlocked());
-            e.setLevel((short)GameManager.instance.actualScene);
+            e.setLevel((short)GameManager.instance.getCurrentLevel());
             e.setPurplePowerUp(purple.enabled);
             Debug.Log("EVENT: PARRY");
             onHold = true;

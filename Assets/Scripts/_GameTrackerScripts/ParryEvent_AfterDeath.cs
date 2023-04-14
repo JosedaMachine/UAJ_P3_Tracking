@@ -16,7 +16,7 @@ public class ParryEvent_AfterDeath : MonoBehaviour
         {
             ParryInputAfterDeath e = TrackerSystem.GetInstance().CreateEvent<ParryInputAfterDeath>();
             e.setTimeAfterDeath(timeStamp);
-            e.setLevel((short)GameManager.instance.actualScene);
+            e.setLevel((short)GameManager.instance.getCurrentLevel());
             TrackerSystem.GetInstance().trackEvent(e);
             Debug.Log("EVENT: AFTER DEATH BLOCK");
         }

@@ -77,6 +77,11 @@ public class GameManager : MonoBehaviour
         SFXVolSlider = volume;
     }
 
+    public int getCurrentLevel()
+    {
+        return actualScene - 2;
+    }
+
     public void ChangeScene()
     {
         checkpoint = new Vector2(0, 0);

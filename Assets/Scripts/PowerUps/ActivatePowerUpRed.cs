@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GameTracker;
+using UnityEngine;
 
 // <summary>
 // Componente utilizado para activar power-up's del jugador
@@ -39,6 +40,14 @@ public class ActivatePowerUpRed : MonoBehaviour
             // Si contador llega al número necesario de bloqueos, se activa el PowerUp
             if (cont == numBlocks)
             {
+                //Evento del power up rojo en game tracker
+                Debug.Log("EVENT:POWERUP_RED ACQUIRED");
+                ObtainRedPowerUpEvent e = TrackerSystem.GetInstance().CreateEvent<ObtainRedPowerUpEvent>();
+
+                e.setLevel((short)GameManager.instance.getCurrentLevel());
+
+                TrackerSystem.GetInstance().trackEvent(e);
+
                 pum.ActivatePowerUp("PowerUpRed");
                 cont = 0;
             }

@@ -40,14 +40,14 @@ public class DeathBeforeParryEvent : MonoBehaviour
 
     public void sendEventDiedFromBullet()
     {
-        if(startCounting)
-        {
-            //Proceso del evento
-            DieFromBulletEvent e = TrackerSystem.GetInstance().CreateDieFromBulletEvent();
-            e.setLevel((short)GameManager.instance.actualScene);
-            e.setTimeAfterParryFailed(timeStamp);
-            TrackerSystem.GetInstance().trackEvent(e);
-            Debug.Log("EVENT: DIED AFTER BLOCK");
-        }
+        //Proceso del evento
+        DieFromBulletEvent e = TrackerSystem.GetInstance().CreateEvent<DieFromBulletEvent>();
+        e.setLevel((short)GameManager.instance.getCurrentLevel());
+        e.setTimeAfterParryFailed(startCounting ? timeStamp : -1.0f);
+        TrackerSystem.GetInstance().trackEvent(e);
+        Debug.Log("EVENT: DIED");
+        //if (startCounting)
+        //{
+        //}
     }
 }
