@@ -4,7 +4,7 @@ using UnityEngine;
 // <summary>
 // Componente utilizado para activar power-up's del jugador
 
-
+//ALTERED BY ÁNGEL LÓPEZ FOR UAJ
 public class ActivatePowerUpRed : MonoBehaviour 
 {
     PowerUpManager pum;
