@@ -12,7 +12,8 @@ public class EventoBloqueo : MonoBehaviour
     private PowerUpPurple purple;
 
     private bool onHold = false;
-    private ParryEvent parryEvent;
+
+    private GameObject lastBullet = null;   //Última bala que ha pasado por el radio
 
     private void Awake()
     {
@@ -22,33 +23,30 @@ public class EventoBloqueo : MonoBehaviour
 
     private void Update()
     {
-        bool balasEnRadio = Physics2D.OverlapCircle(transform.position, tamano, layerBalas);
+        Collider2D balasEnRadio = Physics2D.OverlapCircle(transform.position, tamano, layerBalas);
+        ParryEvent e = TrackerSystem.GetInstance().CreateEvent<ParryEvent>();
 
-        if (balasEnRadio && parry.enabled && !onHold)
+        //Para que no te saque 14 parrys de la misma bala
+        if (balasEnRadio != null && parry.enabled && !onHold && balasEnRadio.gameObject != lastBullet)
         {
-            ParryEvent e = TrackerSystem.GetInstance().CreateEvent<ParryEvent>();
+            //Asignamos la última bala
+            lastBullet = balasEnRadio.gameObject;
             e.setBlocked(parry.HasBlocked());
             e.setLevel((short)GameManager.instance.getCurrentLevel());
             e.setPurplePowerUp(purple.enabled);
             Debug.Log("EVENT: PARRY");
             onHold = true;
 
-            if (!parry.enabled && onHold)
-            {
-                e.setBlocked(parry.HasBlocked());
-                if (parry.HasBlocked())
-                    Debug.Log("EVENT: PARRY DONE");
-                TrackerSystem.GetInstance().trackEvent(parryEvent);
-                Debug.Log("EVENT: SEND");
-                onHold = false;
-            }
         }
 
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, tamano);
+        if (!parry.enabled && onHold)
+        {
+            e.setBlocked(parry.HasBlocked());
+            if (parry.HasBlocked())
+                Debug.Log("EVENT: PARRY DONE");
+            TrackerSystem.GetInstance().trackEvent(e);
+            Debug.Log("EVENT: SEND");
+            onHold = false;
+        }
     }
 }
