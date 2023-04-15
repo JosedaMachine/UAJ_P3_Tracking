@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using GameTracker;
 
 public class Checkpoint : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Checkpoint : MonoBehaviour
             GameManager.instance.checkpoint = transform.position;
             if (deadVal > GameManager.instance.deadVal)
                 GameManager.instance.deadVal = deadVal;
+
+            TrackerSystem.GetInstance().Persist();
         }
     }
 }
