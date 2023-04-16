@@ -19,6 +19,14 @@ public class GameManager : MonoBehaviour
                  SFXVolSlider = 0.2f,
                  musicVolSlider = 0.2f;
 
+    [Header("TRACKER SETTINGS")]
+    [Header("Persistancy Frecuency (secs)")]
+    [Tooltip("If 0, it will just persist when tracker stops.")]
+    public uint timePersistance_ = 0;
+
+    [Header("User ID")]
+    [Tooltip("If void, it will use Unity Analitics user ID information.")]
+    public string userID_ = "";
 
     // En el método Awake comprueba si hay otro GameManger
     // y si no lo hay se inicializa como GameManager. En el caso
@@ -32,14 +40,25 @@ public class GameManager : MonoBehaviour
 
             //Inicializacion de Tracker
             ISerializer serializer = new JsonSerializer();
+            ((JsonSerializer)serializer).setName("data" + ".json");
+
+            Debug.Log(AnalyticsSessionInfo.sessionId.ToString());
+            Debug.Log(AnalyticsSessionInfo.userId);
+
             IPersistence fp = new FilePersistence(ref serializer);
-            TrackerSystem.Init("Neon_Rider", AnalyticsSessionInfo.sessionId.ToString(), AnalyticsSessionInfo.userId, ref fp);
+
+            if (string.IsNullOrWhiteSpace(userID_))
+                userID_ = AnalyticsSessionInfo.userId;
+
+            TrackerSystem.Init("Neon_Rider", AnalyticsSessionInfo.sessionId.ToString(), userID_ , ref fp);
+
 
             //Posible adiceion de ServerPersistence
             //IPersistence sp = new ServerPersistence(ref serializer);
             //TrackerSystem.GetInstance().AddPersistence(ref sp);
 
-
+            //Configurations
+            TrackerSystem.GetInstance().setFrecuencyPersistanceTimeSeconds(timePersistance_);
             //Iniciar Tracker
             TrackerSystem.GetInstance().Start();
         }
