@@ -28,7 +28,9 @@ public class PowerUpPurple : MonoBehaviour
         if ((purpleBulletComponent != null|| redBulletComponent != null || turretBulletComponent != null) && parry.enabled )
         {
             rbBullet.velocity = -rbBullet.velocity;
-            bullet.layer = 13;               
+            bullet.layer = 13;
+
+            parry.SetBlocked();
         }
                           
     }

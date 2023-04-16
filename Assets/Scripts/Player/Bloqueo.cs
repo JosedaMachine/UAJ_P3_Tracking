@@ -22,6 +22,7 @@ public class Bloqueo : MonoBehaviour
     // True si se bloqueó algo en el último frame
     bool hasBlocked = false;
     public bool HasBlocked() => hasBlocked;
+    public void SetBlocked() => hasBlocked = true;
     private void Awake()
     {
         collisionArea = this.GetComponent<CapsuleCollider2D>();

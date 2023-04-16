@@ -32,7 +32,7 @@ public class EventoBloqueo : MonoBehaviour
             e = TrackerSystem.GetInstance().CreateEvent<ParryEvent>();
             //Asignamos la última bala
             lastBullet = balasEnRadio.gameObject;
-            e.setBlocked(parry.HasBlocked());
+            //e.setBlocked(parry.HasBlocked());
             e.setLevel((short)GameManager.instance.getCurrentLevel());
 
             e.setPurplePowerUp(purple.enabled);
