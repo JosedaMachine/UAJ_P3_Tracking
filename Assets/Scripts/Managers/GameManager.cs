@@ -38,34 +38,52 @@ public class GameManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this.gameObject);
 
-            //Inicializacion de Tracker
-            ISerializer serializer = new JsonSerializer();
-            ((JsonSerializer)serializer).setName("data" + ".json");
-
-            Debug.Log(AnalyticsSessionInfo.sessionId.ToString());
-            Debug.Log(AnalyticsSessionInfo.userId);
-
-            IPersistence fp = new FilePersistence(ref serializer);
-
-            if (string.IsNullOrWhiteSpace(userID_))
-                userID_ = AnalyticsSessionInfo.userId;
-
-            TrackerSystem.Init("Neon_Rider", AnalyticsSessionInfo.sessionId.ToString(), userID_ , ref fp);
-
-
-            //Posible adiceion de ServerPersistence
-            //IPersistence sp = new ServerPersistence(ref serializer);
-            //TrackerSystem.GetInstance().AddPersistence(ref sp);
-
-            //Configurations
-            TrackerSystem.GetInstance().setFrecuencyPersistanceTimeSeconds(timePersistance_);
-            //Iniciar Tracker
-            TrackerSystem.GetInstance().Start();
+            //Inicializar tracker
+            InitiaizeTracker();
         }
         else
         {
             Destroy(this.gameObject);
         }      
+    }
+
+    private void InitiaizeTracker()
+    {
+        //Inicializacion de Tracker
+        ISerializer serializer = new JsonSerializer();
+
+        string session = AnalyticsSessionInfo.sessionId.ToString();
+
+        //Asignamos el nombre del fichero
+        ((JsonSerializer)serializer).setName(session + ".json");
+
+        IPersistence fp = new FilePersistence(ref serializer);
+
+        //Asignamos la salida de los datos persistidos.
+        (fp as FilePersistence).setOutPutPath("Assets/trackedData/");
+
+        //En caso de que no se defina identificado de usuario.
+        if (string.IsNullOrWhiteSpace(userID_))
+            userID_ = AnalyticsSessionInfo.userId;
+
+        //Inicializamos la instancia del Tracker
+        TrackerSystem.Init("Neon_Rider", session, userID_, ref fp);
+
+        ////Añadimos nuevos sistema de persistencia
+        ISerializer serializerCSV = new CSVSerializer();
+        ((CSVSerializer)serializerCSV).setName(session + ".csv");
+        IPersistence fpCSV = new FilePersistence(ref serializerCSV);
+        (fpCSV as FilePersistence).setOutPutPath("Assets/trackedData/");
+        TrackerSystem.GetInstance().AddPersistence(ref fpCSV);
+
+        //Posible adicion de ServerPersistence
+        //IPersistence sp = new ServerPersistence(ref serializer);
+        //TrackerSystem.GetInstance().AddPersistence(ref sp);
+
+        //Configurations
+        TrackerSystem.GetInstance().setFrecuencyPersistanceTimeSeconds(timePersistance_);
+        //Iniciar Tracker
+        TrackerSystem.GetInstance().Start();
     }
 
     public void FullscreenToggleState(bool isFullscreen)

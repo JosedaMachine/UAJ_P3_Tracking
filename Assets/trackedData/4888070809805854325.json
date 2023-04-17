@@ -1,0 +1,102 @@
+[
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743574,
+  "EventType": "Init Session"
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743585,
+  "EventType": "Parry",
+  "Level": 1,
+  "Blocked": true,
+  "PurplePowerUp": false
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743586,
+  "EventType": "Parry",
+  "Level": 1,
+  "Blocked": true,
+  "PurplePowerUp": false
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743587,
+  "EventType": "RedPowerUpObtained",
+  "Level": 1
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743587,
+  "EventType": "Parry",
+  "Level": 1,
+  "Blocked": true,
+  "PurplePowerUp": false
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743588,
+  "EventType": "Parry",
+  "Level": 1,
+  "Blocked": true,
+  "PurplePowerUp": false
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743591,
+  "EventType": "Parry",
+  "Level": 1,
+  "Blocked": true,
+  "PurplePowerUp": false
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743592,
+  "EventType": "Parry",
+  "Level": 1,
+  "Blocked": true,
+  "PurplePowerUp": false
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743593,
+  "EventType": "RedPowerUpObtained",
+  "Level": 1
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743592,
+  "EventType": "Parry",
+  "Level": 1,
+  "Blocked": true,
+  "PurplePowerUp": false
+},
+{
+  "GameID": "Neon_Rider",
+  "SessionID": "4888070809805854325",
+  "UserID": "7b82ba87b5bce784e9b1b02f075ee445",
+  "TimeStamp": 1681743614,
+  "EventType": "Finish Session"
+}
+]
