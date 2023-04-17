@@ -46,8 +46,5 @@ public class DeathBeforeParryEvent : MonoBehaviour
         e.setTimeAfterParryFailed(startCounting ? timeStamp : -1.0f);
         TrackerSystem.GetInstance().trackEvent(e);
         Debug.Log("EVENT: DIED");
-        //if (startCounting)
-        //{
-        //}
     }
 }

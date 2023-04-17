@@ -2,9 +2,12 @@
 using UnityEngine.SceneManagement;
 using GameTracker;
 using UnityEngine.Analytics;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
+    const string editorPath = "Assets/trackedData/";
+    string buildPath;
     //Creas un object GameManager vacio (prefab para que sobreviva escenas) con este script.
 
     public static GameManager instance;
@@ -44,7 +47,9 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
-        }      
+        }
+
+        buildPath = Application.dataPath + "/trackerData/";
     }
 
     private void InitiaizeTracker()
@@ -52,15 +57,28 @@ public class GameManager : MonoBehaviour
         //Inicializacion de Tracker
         ISerializer serializer = new JsonSerializer();
 
+        //Asignacion del path de los ficheros del tracker
+        string trackerPath;
+        if (Application.isEditor)
+            trackerPath = editorPath;
+        else
+        {
+            trackerPath = buildPath;
+            //if (!Directory.Exists(trackerPath))
+            //{
+            //    Directory.CreateDirectory(trackerPath);
+            //}
+        }
+
         string session = AnalyticsSessionInfo.sessionId.ToString();
 
         //Asignamos el nombre del fichero
-        ((JsonSerializer)serializer).setName(session + ".json");
+        ((JsonSerializer)serializer).setName("trackerData_" + session + ".json");
 
         IPersistence fp = new FilePersistence(ref serializer);
 
         //Asignamos la salida de los datos persistidos.
-        (fp as FilePersistence).setOutPutPath("Assets/trackedData/");
+        (fp as FilePersistence).setOutPutPath(trackerPath);
 
         //En caso de que no se defina identificado de usuario.
         if (string.IsNullOrWhiteSpace(userID_))
@@ -71,9 +89,9 @@ public class GameManager : MonoBehaviour
 
         ////Añadimos nuevos sistema de persistencia
         ISerializer serializerCSV = new CSVSerializer();
-        ((CSVSerializer)serializerCSV).setName(session + ".csv");
+        ((CSVSerializer)serializerCSV).setName("trackerData_" + session + ".csv");
         IPersistence fpCSV = new FilePersistence(ref serializerCSV);
-        (fpCSV as FilePersistence).setOutPutPath("Assets/trackedData/");
+        (fpCSV as FilePersistence).setOutPutPath(trackerPath);
         TrackerSystem.GetInstance().AddPersistence(ref fpCSV);
 
         //Posible adicion de ServerPersistence
